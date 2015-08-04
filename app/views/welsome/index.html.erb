@@ -1,0 +1,25 @@
+<h1>Welcome to my Travel Page</h1>
+<p>This site is super rad.</p>
+
+<p>
+	<%= @homeland%>
+</p>
+
+<ol>
+	<h3> Countries I want to visit!</h3>
+	<% @countries.each do |country| %>
+		<li><%= country %></li> 
+	<% end %>
+</ol>
+
+<%= image_tag 'alyssaandme.jpg' ,alt: "My girl!", id: "piney" , class: "size-down"%> 
+<%= image_tag 'Italy.jpg' ,alt: "Italy", id: "piney" , class: "size-down"%> 
+<%= image_tag 'newz.jpg' ,alt: "New Zealand", id: "piney" , class: "size-down"%> 
+<%= image_tag 'philippines.jpg' ,alt: "Islands", id: "piney" , class: "size-down"%> 
+<br />
+<br />
+<h3> Array of images:</h3>
+
+<% @images.each do |pic| %>
+	<%=image_tag pic, class: "size-down"%>
+<% end %>
